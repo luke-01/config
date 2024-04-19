@@ -1,0 +1,16 @@
+(defwidget battery [status capacity]
+	(box :tooltip "${capacity}% ${status}" :halign "center"
+		(label :text {
+			status == "Charged" ? "󰁹" : (
+				capacity > 90 ? "󰂂" : 
+				(capacity > 80 ? "󰂁" : 
+				(capacity > 70 ? "󰂀" : 
+				(capacity > 60 ? "󰁿" : 
+				(capacity > 50 ? "󰁾" : 
+				(capacity > 40 ? "󰁽" : 
+				(capacity > 30 ? "󰁼" : 
+				(capacity > 20 ? "󰁻" : "󰁺"))))))))})
+		(label :text {
+			status == "Charged" ? "" : 
+			(status == "Charging" ? "󱐋" : 
+			(capacity > 20 ? "" : "!"))})))

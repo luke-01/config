@@ -1,0 +1,322 @@
+echo $XDG_CONFIG_HOME
+celar
+lcear
+clear
+ls
+sudo pacman -S starship
+sudo pacman -S ttf-fira-mono ttf-fira-mono-nerd
+sudo pacman -S ttf-fira-mono ttf-firamono-nerd
+sudo pacman -S ttf-font-nerd ttf-fira-mono
+clear
+nvim zsh/.config/zsh/.zshrc
+exec zsh
+lcear
+clear
+ls
+ls /usr/share/zsh/plugins
+ls /usr/share/zsh/plugins/zsh-autosuggestions
+nvim zsh/.config/zsh/.zshrc
+clear
+exec zsh
+clear
+ls
+sudo pacman -S eza ripgrep
+nvim zsh/.config/zsh/.zshrc
+exec zsh
+ls
+ls -T
+ls -l
+\ls -l
+ls
+mkdir -p starship/.config
+nvim starship/.config/starship.toml
+clear
+exec zsh
+nvim starship/.config/starship.toml
+ls
+exec zsh
+stow starship
+ls
+ls -T
+ls -lT
+ls -aT
+nvim starship/.config/starship.toml
+ls
+clear
+ll
+ls
+nvim starship/.config/starship.toml
+clear
+ls
+cd ..
+cd Documentos
+cd ..
+cd config
+ls -a
+ls -a zsh
+nvim zsh/.config/zsh/.zshrc
+exec zsh
+clear
+ll
+la
+lcear
+clear
+which zsh
+nvim
+sudo pacman -S wl-clipboard
+nvim
+sudo pacman -S python-pynvim
+lcear
+clear
+ls
+mkdir -p nvim/.config/nvim
+cd nvim/.config/nvim
+clear
+ls
+nvim init.lua
+cd ..
+cd ..
+cd ..
+stow nvim
+exit
+reboot
+alsamixer
+cd config/hyprland/.config/hypr
+nvim hyprland.conf
+wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ +5%
+wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+nvim hyprland.conf
+date
+date
+date
+date
+date
+sudo pacman -Syu obsidian
+clear
+ll
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+exit
+nvim .zshenv
+exec zsh
+cat /sys/class/power_supply/BAT1/capacity
+htop
+exit
+cargo -v
+clear
+cargo install eww
+sudo pacman -S git
+clear
+git clone https://github.com/elkowar/eww\
+
+cd eww
+cargo build --release --no-default-features --features=wayland\
+
+clear
+sudo pacman -S gtk3 gtk-layer-shell pango gdk-pixbuf2 libdbusmenu-gtk3 cairo glib2
+clear
+cargo build --release --no-default-features --features=wayland\
+
+clear
+ls
+sudo cp target/release/eww /usr/local/bin/
+eww --version
+clear
+exit
+date
+ll
+clear
+exit
+cat /sys/class/power_supply/BAT1/capacity
+clear
+nmcli device wifi rescan
+nmcli device wifi list
+nmcli device wifi connect vhikhgttg password 12345678
+clear
+cp Descargas/Origins\ and\ uses\ of\ the\ FFT.md Documentos/Notes
+exit
+cd Documentos
+cd Notes
+clear
+ls
+nvim Origins\ and\ uses\ of\ the\ FFT.md
+nvim Origins\ and\ uses\ of\ the\ FFT.md
+nvim Origins\ and\ uses\ of\ the\ FFT.md
+nvim ~/Descargas/0165168494900086.txt
+nvim Origins\ and\ uses\ of\ the\ FFT.md
+nvim "Pollard 1971.md"
+sudo pacman -S zathura zathura-pdf-mupdf
+sudo pacman -S zathura zathura-pdf-mupdf
+clear
+zathura --fork ~/Descargas/Pollard\ 1971.pdf
+nvim "Pollard 1971.md"
+lcear
+clear
+zathura --fork ~/Descargas/Nussbaumer\ 1982.pdf
+clear
+nvim "Nussbaumer 1982"
+nvim "Nussbaumer 1982.md"
+zathura --fork ~/Descargas/Nussbaumer\ 1982.pdf
+Hyprland
+cd config
+cd nvim/.config/nvim
+clear
+ls
+nvim init.lua
+clear
+date
+date
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT1/capacity
+date
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT1/status
+pacman -F notify-send
+sudo pacman -Fy
+pacman -F notify-send
+sudo pacman -F libnotify
+sudo pacman -D libnotify
+sudo pacman -S libnotify
+ll
+cd
+pacman -Ss autojump
+pacman -Ss zoxide
+cd dev
+cd config
+celar
+clear
+ls
+cd hyprland/.config/hypr
+clear
+nvim hyprland.conf
+pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S grim slurp
+clear
+nvim hyprland.conf
+eww daemon
+cd ..
+cd ..
+cd
+cd config
+celar
+mkdir -p eww/.config/eww
+eww daemon
+stow eww
+eww daemon
+touch eww/.config/eww/eww.yuck
+touch eww/.config/eww/eww.scss
+clear
+ls
+cd hyprland/.config/hypr
+clear
+ls
+nvim hyprland.conf
+sudo pacman -S swaybg
+man swaybg
+swaybg -i ~/Im√ÉÅgenes/Wallpapers/417607-music-Godspeed_You_Black_Emperor-album_covers-1116977004.jpg
+cd ~/Im√ÉÅgenes/Wallpapers
+mv 417607-music-Godspeed_You_Black_Emperor-album_covers-1116977004.jpg godspeed.jpg
+ll
+cd
+cd config/hyprland/.config/hypr
+clear
+nvim hyprland.conf
+pacman -Q | grep qt
+nvim hyprland.conf
+reboot
+htop
+cd config/hyprland/.config/hypr
+nvim hyprland.conf
+swaybg ~/Im√ÉÅgenes/Wallpapers/godspeed.jpg
+nvim hyprland.conf
+clear
+cd config
+mkdir -p kitty/.config/kitty/kitty.conf
+cd kitty/.config/kitty/
+ls
+rm -rf kitty.conf
+nvim kitty.conf
+cd ..
+cd ..
+cd ..
+stow kitty
+exit
+cd config
+clear
+ls
+cd kitty/.config/kitty
+nvim kitty.conf
+exit
+nvim kitty.conf
+cd config/kitty/.config/kitty
+nvim kitty.conf
+nvim kitty.conf
+fc-list | rg -i fira
+nvim kitty.conf
+exit
+cd config/kitty/.config/kitty
+nvim kitty.conf
+exit
+ll
+clear
+sudo pacman -S zoxide
+sudo pacman -S fzf
+sudo pacman -S tmux
+clear
+ls
+cd config/zsh
+nvim .config/zsh/.zcompdump
+nvim .config/zsh/.zshrc
+rm .config/zsh/.zcompdump
+clear
+exit
+exit
+sudo pacman -S nodejs npm
+clear
+exit
+cd config
+clear
+ls
+kitten @ --help
+lcear
+clear
+ls
+cd nvim/.config/nvim
+clear
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim .luarc.json
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+clear
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+clear
+exit
+npm install -g neovim
+sudo npm install -g neovim
+clear
+exit
+nvim init.lua
+exit
+eww open bar
+eww open bar
+eww open bar
+eww open bar
+exit
