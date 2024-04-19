@@ -12,6 +12,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # setup rust
 . "$HOME/.cargo/env"
 
+# setup vulkan
+source /opt/vulkan/1.3.280.1/setup-env.sh
+
 # prompt
 eval "$(starship init zsh)"
 

@@ -320,3 +320,433 @@ eww open bar
 eww open bar
 eww open bar
 exit
+z config nvim
+ls
+nvim init.lua
+nvim init.lua
+tmux
+ls
+clear
+cd
+cd config
+clear
+ls
+cd eww/.config/eww
+clear
+ls
+nvim eww.yuck
+clear
+nvim eww.yuck
+nvim eww.scss
+clear
+nvim eww.yuck
+date
+date
+sudo pacman -Syu
+clear
+ls
+date
+date '+%H:%M:%S'
+date '+%H:%M'
+date '+%d/%m/%Y %H:%M'
+ls
+nmcli device wifi list
+nmcli device wifi connect WifiTelsur_DSM password sanchez2015
+clear
+cd
+cd config
+mkdir -p zathura/.config/zathura
+nvim zathura/.config/zathura/zathurarc
+stow zathura
+celar
+clear
+cd
+zathura --fork ~/Descargas/Nussbaumer\ 1982.pdf
+clear
+ll
+clear
+ls+
+clear
+clear
+cd Documentos/Notes
+clear
+ls
+nvim "Winograd 1978.md"
+zathura --fork ~/Descargas/Winograd\ 1978.pdf
+lcear
+clear
+nvim "Winograd 1978.md"
+date
+time
+date
+cd ..
+clear
+cd
+cd dev
+clear
+mkdir dev
+cd dev
+lcear
+clear
+ls
+mkdir winograd
+cd winograd
+clear
+ls
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+clear
+g++ winograd.cpp -std=c++20
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+g++ winograd.cpp -std=c++20
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20
+ls
+g++ winograd.cpp -std=c++20 -g
+sudo pacman -S clang gdb lldb
+clear
+gdb ./a.out
+clear
+ls
+nvim winograd.cpp
+g++ winograd.cpp -std=c++20 -g
+clear
+ls
+rm a.out
+clear
+ls
+clear
+nvim winograd.cpp
+nvim winograd.cpp
+clear
+nvim build.sh
+ls
+nvim build.sh
+chmod +x build.sh
+./build.sh
+ls
+./main
+rm +
+ls
+clear
+ls
+./main
+nvim winograd.cpp
+cd ..
+mkdir lgs
+cd lgs
+clear
+ls
+nvim main.cpp
+nvim main.cpp
+clang++ -g -std=c++20 -Weverything main.cpp -o main
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat
+clear
+ls
+./main
+clang++ -g -std=c++20 -Wall -Wextra -Wpedantic main.cpp -o main -Wno-c++98-compat
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat -Wno-unsafe-buffer-usage
+./main
+clear
+ls
+clear
+ls
+clear
+ls
+./main
+nvim main.cpp
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat
+nvim main.cpp
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat
+./main
+clear
+ls
+clang++ -g -std=c++20 -Weverything main.cpp -o main -Wno-c++98-compat
+cd
+clear
+cd config/eww/.config/eww
+clear
+ls
+nvim eww.yuck
+celar
+clear
+ls
+nvim battery.yuck
+nvim eww.yuck
+nvim battery.yuck
+nvim eww.yuck
+fc-list | rg -i fira
+nvim eww.scss
+ls
+nvim eww.yuck
+nvim eww.scss
+clear
+clear
+ls
+hyprctl workspaces
+hyprctl workspaces -j
+hyprctl workspaces -j | jq
+seq 1 10
+seq 1 10 | jq --slurp
+cd
+clear
+ls
+cd dev
+celar
+clear
+ls
+rm -rf lgs winograd
+celar
+celar
+clear
+ls
+mkdir geode
+cd geode
+clear
+ls
+hyprctl workspaces -j | jq
+ls
+cd
+cd config
+clear
+ls
+cd config nvim
+clear
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+clear
+ls
+clear
+ls
+cd
+clear
+ls
+cd dev
+clear
+ls
+cd geode
+clear
+ls
+nvim main.c
+sudo pacman -Syu
+cd
+clear
+nmcli device wifi connect UACh_Visitas
+clear
+ping cnn.com
+clear
+ls
+zathura --fork ~/Descargas/Nussbaumer\ 1982.pdf
+cd Documentos/Notes
+clear
+ls
+nvim Nussbaumer\ 1982.md
+cd
+cd config nvim
+clear
+ls
+mkdir ftplugin
+nvim ftplugin/markdown.lua
+clear
+cd notes
+clear
+ls
+nvim Nussbaumer\ 1982.md
+clear
+cd
+git config --global user.name "Lucas Galindo"
+git config --global user.email "lanternmaze@gmail.com"
+git config --global init.defaultBranch "main"
+clear
+ls
+cd config
+git init
+git add --all
+git status
+git commit -m "initial commit"
+clear
+cd
+cd notes
+ls
+git init
+git add --all
+git status
+git commit -m "initial commit"
+clear
+git remote add origin git@github.com:luke-01/Notes.git\
+git branch -M main\
+git push -u origin main
+ssh-keygen -t ed25519 -C "lanternmaze@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+ls
+git remote add origin git@github.com:luke-01/Notes.git\
+git branch -M main\
+git push -u origin main
+clear
+ls
+zathura --fork ~/Descargas/Nussbaumer\ 1982.pdf
+clear
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+clear
+exit
+ls
+exit
+cd config
+nvim zsh/.config/zsh/.zshrc
+cd
+celar
+celar
+clear
+ls
+cd notes
+clear
+ls
+exit
+append_path
+. /etc/profile.d/cuda.sh 
+exit
+. /etc/profile.d/cuda.sh
+nvim /etc/profile.d/cuda.sh
+pacman -F append_path
+nvim /etc/profile.d/cuda.sh
+bash
+append_path
+clear
+nvim /etc/profile.d/cuda.sh
+cd /etc/profile.d
+clear
+ls
+nmcli device wifi rescan
+nmcli device wifi connect vhikhgttg password 12345678
+source cuda.sh
+source /etc/profile
+source cuda.sh
+nvim /etc/profile
+exit
+Hyprland
+clear
+Hyprland
+yay -S cuda ncurses5-compat-libs
+clear
+eww logs
+eww logs
+celar
+clear
+eww logs
+reboot
+nvim .config/zsh/.zshrc
+exit
+ls
+mkdir vulkan
+cd vulkan
+tar xf /home/luke/Descargas/vulkansdk-linux-x86_64-1.x.yy.z.tar.xz
+tar xf /home/luke/Descargas/vulkansdk-linux-x86_64-1.3.280.1.tar.xz 
+ls
+pacman -S qt5-base libxcb libxinerama
+clear
+cd
+exit
+which nvcc
+ls
+rm -rf eww yay
+git clone git clone https://github.com/NVIDIA/cuda-samples.git
+git clone https://github.com/NVIDIA/cuda-samples.git
+ls
+cd cuda-samples
+clear
+ll
+make -j8
+ls
+cd bin
+ls
+cd x86_64
+ls
+cd linux
+ls
+cd release
+ls
+./topologyQuery
+./vectorAdd
+cd
+cd cuda
+ls
+ls Samples
+cd Samples/1_Utilities
+ls
+cd deviceQuery
+ls
+./deviceQuery
+cd ..
+cd ..
+ls
+cd 5_Domain_Specific
+cd simpleVulkan
+ls
+make
+ls
+cat Build_instructions.txt
+sudo pacman -S glfw
+make
+ls
+pacman -F libX11.so
+pacman -F libvulkan.so
+cd
+sudo pacman -S base-devel glm cmake libpng wayland libpciaccess libx11 libxpresent \\
+libxcb xcb-util libxrandr xcb-util-keysyms xcb-util-wm python git lz4 zstd python-distlib qt5-base \\
+wayland-protocols ninja
+clear
+cd /opt
+clear
+ls
+su
+ls
+cd
+nvim .config/zsh/.zshrc
+exec zsh
+echo $VULKAN_SDK
+clear
+ls
+vulkaninfo
+vkcube
+cd cuda-samples
+j vulkan
+cd vulkan
+ls
+make
+ls
+rg "libX11.so not found"
+nvim findvulkan.mk
+make
+ls
+./simpleVulkan
+cd
+celar
+clear
+ls
+rm -rf cuda-samples
+lcear
+clear
+ls
+nvim .config/hypr/hyprland.conf
+eww open bar
+nvim .config/eww/battery.yuck

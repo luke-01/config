@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.diagnostic.config({ update_in_insert = true })
+
 -- options
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -173,5 +175,17 @@ require('lazy').setup({
 			})
 		end
 	},
-	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} }
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		dependencies = { 'hrsh7th/nvim-cmp' },
+		config = function()
+			require('nvim-autopairs').setup({})
+
+			local cmp = require('cmp')
+			local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+			cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
+		end
+	},
+	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 })
