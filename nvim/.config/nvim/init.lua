@@ -1,3 +1,8 @@
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -206,7 +211,17 @@ require('lazy').setup({
 			cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
 		end
 	},
+    {
+        'nvim-tree/nvim-tree.lua',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function()
+            require('nvim-tree').setup({})
+            local api = require('nvim-tree.api')
+            vim.keymap.set('n', '<leader>t', api.tree.toggle)
+        end
+    },
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	{ 'lewis6991/gitsigns.nvim', opts = {} },
 	{ 'folke/todo-comments.nvim', opts = {} },
+    { 'nvim-lualine/lualine.nvim', opts = {} },
 })

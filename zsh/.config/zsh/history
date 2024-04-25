@@ -1454,3 +1454,40 @@ cat .zprofile
 source .zprofile
 clear
 exit
+clear
+nvim
+exit
+exit
+nvim
+clear
+ls
+nvim tmux/.config/tmux/tmux.conf
+exit
+clear
+exit
+cd config
+ls
+clear
+git status
+git add --all
+git commit -m "various stuff"
+clear
+ls
+ls
+mkdir -p tmux/.config/tmux
+nvim tmux/.config/tmux/tmux.conf
+stow tmux
+tmux
+clear
+tmux
+echo $TERM
+clear
+ls
+tmux
+tmux
+lcear
+clear
+ls
+exit
+htop
+exit
