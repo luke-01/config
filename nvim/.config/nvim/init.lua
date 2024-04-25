@@ -12,6 +12,9 @@ vim.opt.splitbelow = true
 
 vim.opt.clipboard = 'unnamedplus'
 
+vim.opt.smartcase = true
+vim.opt.ignorecase = true
+
 vim.opt.undofile = true
 vim.opt.updatetime = 10
 vim.opt.swapfile = false
@@ -23,6 +26,7 @@ vim.opt.wrap = false
 -- vim.opt.breakindent = true
 
 local tab_size = 4
+vim.opt.expandtab = true -- tabs as spaces
 vim.opt.tabstop = tab_size
 vim.opt.softtabstop = tab_size
 vim.opt.shiftwidth = tab_size
@@ -32,6 +36,21 @@ vim.opt.cursorline = true
 vim.opt.colorcolumn = '100'
 
 vim.opt.termguicolors = true
+
+-- Neovide
+if vim.g.neovide then
+    vim.g.neovide_transparency = 0.95
+    vim.g.neovide_scale_factor = 1.0
+    local change_scale_factor = function(delta)
+      vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+    end
+    vim.keymap.set("n", "<C-+>", function()
+      change_scale_factor(1.1)
+    end)
+    vim.keymap.set("n", "<C-->", function()
+      change_scale_factor(1/1.1)
+    end)
+end
 
 -- keymaps
 
@@ -188,4 +207,6 @@ require('lazy').setup({
 		end
 	},
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
+	{ 'lewis6991/gitsigns.nvim', opts = {} },
+	{ 'folke/todo-comments.nvim', opts = {} },
 })

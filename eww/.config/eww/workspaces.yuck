@@ -1,0 +1,18 @@
+(defvar workspace_data `[
+    {"id": 1, "icon": "󰈹"},
+    {"id": 2, "icon": "󰆍"},
+    {"id": 3, "icon": "󰆍"},
+    {"id": 4, "icon": "󰆍"},
+    {"id": 5, "icon": "󰆍"},
+    {"id": 6, "icon": "󰆍"},
+    {"id": 7, "icon": "󰆍"},
+    {"id": 8, "icon": ""},
+    {"id": 9, "icon": ""},
+    {"id": 10, "icon": ""}
+    ]`)
+(defpoll active_workspace_id :interval "1s" `hyprctl activeworkspace -j | jq -r '.["id"]'`)
+(defwidget workspaces []
+    (box :spacing 0 (for workspace in workspace_data 
+        (button :width "40" :class {workspace.id == active_workspace_id ? "active-workspace" : "workspace" }
+            :onclick `hyprctl dispatch workspace ${workspace.id}` {workspace.icon}))))
+

@@ -1,5 +1,6 @@
 ; put into a separate file because it's gross and I don't want to look at it
 (include "./battery.yuck")
+(include "./workspaces.yuck")
 
 (defwindow bar 
 	:monitor 0
@@ -7,9 +8,16 @@
 	:stacking "fg"
 	:exclusive true
 	:focusable false
-	(box :class "main-widget" :halign "end" :space-evenly false :spacing 20
-		(datetime)
-		(battery :status {EWW_BATTERY.BAT1.status} :capacity {EWW_BATTERY.BAT1.capacity})))
+    (box :class "main-widget"
+        (box :halign "start" (workspaces))
+        (box :halign "center" (active_window))
+        (box :halign "end" :space-evenly false :spacing 20
+            (datetime)
+            (battery :status {EWW_BATTERY.BAT1.status} :capacity {EWW_BATTERY.BAT1.capacity}))))
 
 (defpoll datetime_var :interval "1s" `date "+%d/%m/%Y %H:%M"`)
 (defwidget datetime [] (label :text {datetime_var}))
+
+(defpoll active_window_var :interval "1s" `hyprctl activewindow -j | jq -r '.["title"]'`)
+(defwidget active_window [] (label :text {active_window_var != "null" ? active_window_var : ""}))
+

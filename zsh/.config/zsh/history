@@ -750,3 +750,707 @@ ls
 nvim .config/hypr/hyprland.conf
 eww open bar
 nvim .config/eww/battery.yuck
+ls
+ll
+clear
+ls
+cd dev
+clear
+ls
+cd geode
+ls
+nvim main.c
+nvcc --help
+clear
+ls
+rm compile_flags.txt main.c
+clear
+ls
+nvim main.c
+rm main.c
+ls
+cd nvim
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd config
+ls
+git add --all
+git status
+git commit -m "update init.lua"
+git push
+clear
+cd
+cd dev
+clear
+ls
+cd geode
+ls
+ls /usr/lib | grep glfw
+pacman -Ss glfw
+yay -Ss glfw
+echo $VULKAN_SDK
+ls
+clear
+ls
+nvim main.c
+ls
+nvim main.c
+clear
+mkdir build
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+nvim CMakeLists.txt
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake --build build
+nvim main.c
+cmake --build build
+nvim CMakeLists.txt
+cmake --build build
+./build/geode
+clear
+ls
+nvim main.c
+cmake --build build
+./build/geode
+nvim main.c
+cmake --build build
+./build/geode
+nvim main.c
+cmake --build build
+./build/geode
+cd Documentos/Notes
+ls
+git add --all
+git commit -m "dai 2015 chips 2017 y el otro"
+git push
+cd
+celar
+celar
+clear
+ls
+cd .config/eww
+ls
+nvim eww.yuck
+nvim battery.yuck
+clear
+pause
+clear
+pacman -F cls
+sudo pacman -S jre-openjdk jdk-openjdk
+sudo pacman -S jdk-openjdk
+sudo pacman -Syu jdk-openjdk
+clear
+java -v
+java --version
+clear
+ls
+ls
+cd dev
+git clone https://github.com/MultiMC/multimc-pkgbuild.git\
+cd multimc-pkgbuild\
+makepkg -si
+clear
+pacman -Ss spotify
+sudo pacman -S spotify-launcher
+cd
+clear
+l
+ls
+Hyprland
+celar
+reboot
+nvim .config/hypr/hyprland.conf
+cd geode
+clear
+ls
+nvim main.c
+cmake --build build
+ls /opt/vulkan
+ls /opt/vulkan/1.3.280.1
+ls /opt/vulkan/1.3.280.1/x86_64
+ls /opt/vulkan/1.3.280.1/x86_64/lib
+clear
+ls
+nvim CMakeLists.txt
+nvim main.c
+cmake --build build
+ls /opt/vulkan/1.3.280.1/x86_64/lib
+ls /opt/vulkan/1.3.280.1/x86_64/include
+ls
+cmake --build build
+nvim main.c
+nvim CMakeLists.txt
+cmake --build build
+ls
+nvim /opt/vulkan/1.3.280.1/config
+ll /opt/vulkan/1.3.280.1/config
+ll /opt/vulkan/1.3.280.1/x86_64
+ll /opt/vulkan/1.3.280.1/x86_64/share
+ll /opt/vulkan/1.3.280.1/x86_64/share/cmake
+ll /opt/vulkan/1.3.280.1/x86_64/share/cmake/VulkanHeaders
+ll /opt/vulkan/1.3.280.1/x86_64/share/vulkan
+ll /opt/vulkan/1.3.280.1/x86_64/share/vulkan/config
+ls /usr/share/cmake
+ls /usr/share/cmake/Modules
+nvim /usr/share/cmake/Modules/FindVulkan.cmake
+clear
+ls
+cd ..
+rm -rf geode
+ls
+mkdir geode
+cd geode
+clear
+ls
+nvim main.c
+nvim compile_flags.txt
+nvim main.c
+pkg-config --libs --cflags wayland-client
+pacman -Ss xkbcommon
+clear
+pkg-config --libs --cflags libxkbcommon
+pkg-config --libs --cflags xkbcommon
+lcear
+clear
+ls
+nvim main.c
+nvim build.sh
+chmod +x build.sh
+./build.sh
+nvim build.sh
+nvim build.sh
+./build.sh
+clear
+ls
+./geode
+ls
+nvim main.c
+./build.sh
+nvim compile_flags.txt
+./build.sh
+ls
+./geode
+nvim main.c
+./build.sh
+./geode
+clear
+gdb ./geode
+clear
+nvim main.c
+nvim build.sh
+./build.sh
+gdb ./geode
+clear
+ls
+nvim main.c
+./build.sh
+./geode
+clear
+ls
+sudo pacman -S neovide
+sudo pacman -S vulkan-intel
+clear
+neovide main.c
+clear
+ls
+nvim main.c
+neovide main.c
+clear
+cd nvim
+nvim init.lua
+nvim init.lua
+cd
+cd geode
+neovide main.c
+ls
+clear
+sudo pacman -Syu
+celar
+clear
+ls
+cd dev/geode
+clear
+ls
+nvim main.c
+pacman -Ss clipboard
+nvim main.c
+nvim main.c
+./build.sh
+nvim main.c
+./build.sh
+ls
+./geode
+nvim main.c
+./build.sh
+./geode
+nvim main.c
+man shm_unlink
+nvim main.c
+nvim main.c
+man shm_unlink
+man unlink
+man 2 unlink
+ping cnn.com
+clear
+ls
+ls
+rm -rf *
+ls
+ll
+clear
+ls
+nvim CMakeLists.txt
+clear
+cd
+cd hypr
+cd .config/hypr
+clear
+ls
+nvim hyprland.conf
+sudo pacman -S pavucontrol
+pacman -Q | grep electron
+pacman -Ss electron
+cd hypr
+ls
+nvim hyprland.conf
+sudo pacman -Syu
+ls
+ls
+j nvim
+cd nvim
+clear
+ls
+nvim init.lua
+neovide init.lua
+neovide init.lua
+neovide init.lua
+nvim init.lua
+neovide init.lua
+neovide init.lua
+clear
+cd
+clear
+ls
+j geode
+cd geode
+clear
+ls
+nvim CMakeLists.txt
+clear
+neovide CMakeLists.txt
+clear
+neovide CMakeLists.txt
+mkdir build
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake --build build
+clear
+./build/geode
+gdb ./build/geode
+clear
+cmake --build build
+cmake --build build
+./build/geode
+clear
+gdb ./build/geode
+cmake --build build
+./build/geode
+celar
+ls
+ls
+clear
+ls
+man wayland-scanner
+wayland-scanner -h
+wayland-scanner client-header /usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml xdg_wm_base_client_protocol.h
+wayland-scanner private-code /usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml xdg_wm_base_protocol.c
+clear
+ls
+ls
+mv xdg_wm_base_client_protocol.h xdg_shell_client_protocol.h
+mv xdg_wm_base_protocol.c xdg_shell_protocol.c
+ll
+./build/geode
+clear
+cmake --build build
+./build/geode
+clear
+sudo pacman -S strace
+cmake --build build
+clear
+gdb ./build/geode
+nvim CMakeLists.txt
+cmake --build build
+./build/geode
+clear
+cmake --build build
+./build/geode
+clear
+ls
+neovide main.c
+pacman -Q grim
+pacman -Q slurp
+clear
+pacman -Qdtq
+clear
+hyprctl activeworkspace
+ls
+hyprctl activewindow
+hyprctl activewindow -j
+hyprctl activewindow -j | jq '.["title"]'
+hyprctl activewindow -j | jq '.["title"]'
+cd hypr
+ls
+cd eww
+clear
+ls
+nvim eww.yuck
+clear
+htop
+ls
+nvim eww.yuck
+exit
+hyprctl activewindow help
+hyprctl activewindow
+man jq
+hyprctl activewindow -j | jq '.["title"]'
+hyprctl activewindow -j | jq '.["title"]'
+hyprctl activewindow -j | jq '.["title"]'
+hyprctl activewindow -j | jq '.["title"]'
+hyprctl activewindow -j | jq -r '.["title"]'
+clear
+hyprctl workspaces -j
+ls
+clear
+hyprctl workspaces -j | jq
+hyprctl workspaces -j | jq 'map({"id": .["id"]})'
+hyprctl activeworkspace
+hyprctl activeworkspace -j
+clear
+hyprctl help
+hyprctl -h
+j hypr
+cd hypr
+nvim hyprland.conf
+hyprctl movetoworkspace 1
+hyprctl --help | less
+hyprctl dispatch movetoworkspace 1
+hyprctl dispatch movetoworkspace 3
+nvim hyprland.conf
+hyprctl dispatch workspace 1
+htop
+htop
+pacman -Q steam
+sudo pacman -S steam
+exit
+sudo pacman -S vlc
+ls
+neofetch
+ls
+cd geode
+clear
+ls
+ls
+neovide main.c
+pacman -Ss desmume
+yay -Ss citra
+cd Descargas
+cd
+cd Descargas
+clear
+ls
+tar xvf citra-linux-appimage-20240303-0ff3440_nightly.tar.gz
+ls
+cd citra-linux-appimage-20240303-0ff3440
+ls
+./citra.AppImage
+./citra-qt.AppImage
+./citra.AppImage --help
+clear
+sudo pacman -S qbittorrent
+yay -Ss lemonade
+yay -Ss lime3ds
+cd ..
+rm -rf citra-linux-appimage-20240303-0ff3440
+rm -rf citra-linux-appimage-20240303-0ff3440_nightly.tar.gz
+clear
+cd
+cd dev
+git clone https://github.com/Lime3DS/Lime3DS
+cd Lime3DS
+clear
+ls
+ll dist
+mkdir build
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+pacman -Ss qt6
+sudo pacman -S qt6-tools
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+pacman -F Qt6Config.cmake
+pacman -F Qt6MultimediaConfig.cmake
+sudo pacman -S qt6-multimedia
+clear
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+git submodule update --init --recursive
+ls
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cd build
+clear
+ls
+make -j8
+ls
+ls bin
+ls -T bin
+./bin/Release/tests
+./bin/Release/lime-qt
+cd ..
+cd ..
+ll
+pcmanfm .
+sudo pacman -S lib32-mesa lib32-vulkan-intel lib32-nvidia-utils ttf-liberation wqy-zenhei
+df -h
+cd
+ll
+celar
+clear
+ls
+pacman -F prime-run
+sudo pacman -S nvidia-prime
+multimc
+yay -Rns multimc-bin
+ll
+ls .local
+ls .local/share
+rm -rf .local/share/multimc
+yay -S prismlauncher
+pacman -Ss java
+pacman -Ss jdk
+sudo pacman -S jdk8-openjdk jdk17-openjdk
+yay -Ss gdlauncher
+clear
+htop
+htop
+multimc
+Hyprland
+ls
+reboot
+ll
+clear
+gamemoderun prime-run glxinfo
+glxinfo
+pacman -F glxinfo
+eglinfo
+pacman -F eglinfo
+sudo pacman -F mesa-utils
+sudo pacman -S mesa-utils
+clear
+gamemoderun prime-run glxinfo
+gamemoderun prime-run glxinfo | grep renderer
+prime-run gamemoderun glxinfo | grep renderer
+gamemoded -t
+man usermod
+sudo usermod -aG gamemode luke
+clear
+gamemoded -t
+clear
+sudo pacman -Syu
+clear
+pacman -F bluetoothctl
+sudo pacman -S bluez-utils
+sudo pacman -S bluez
+clear
+modprobe btusb
+sudo systemctl enable bluetooth.service
+clear
+cd geode
+clear
+ls
+nvim main.c
+man shm
+man shm_open
+ll
+clear
+neovide main.c
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+./build/geode
+clear
+ls
+cd
+clear
+ls
+nmcli device wifi connect vhikhgttg password 12345678
+clear
+zathura --fork ~/Descargas/DOC-20240205-WA000
+clear
+ls
+zathura --fork ~/Descargas/DOC-20240205-WA0002..pdf
+clear
+zathura --fork ~/Descargas/DOC-20240205-WA0001..pdf
+cd notes
+ls
+clear
+neovide "Smith & Smith 1995.md"
+obsidian
+clear
+git add --all
+git commit -m "jnj"
+git push
+clear
+cd geode
+celar
+clear
+ls
+nvim main.c
+clear
+ls
+neovide main.c
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+./build/geode
+clear
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+./build/geode
+ls
+rm -rf build
+rm -rf .cache
+mkdir build
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake --build build
+./build/geode
+clear
+ls
+ping cnn.com
+nvim main.c
+cmake --build build
+./build/geode
+ls
+nvim main.c
+sudo pacman -Syu
+ls
+cd geode
+celar
+clear
+ls
+nvim main.c
+cd ..
+mkdir psemu
+cd psemu
+clear
+ls
+cp ~/Descargas/SCPH1001.BIN .
+clear
+ls
+nvim compile_flags.txt
+nvim main.c
+mv SCPH1001.BIN BIOS.BIN
+clear
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+ls
+./main
+man bswap
+man endian
+clear
+ls
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+gcc -std=gnu2x -Wall main.c -o main
+./main
+nvim main.c
+cd
+clear
+ls
+nmcli device wifi connect vhikhgttg password 12345678
+nmcli device wifi connect vhikhgttg password 12345678
+nmcli device wifi rescan
+nmcli device wifi connect vhikhgttg password 12345678
+nmcli device wifi list
+nmcli device wifi connect vhikhgttg password 12345678
+clear
+ls
+zathura --fork Descargas/DOC-20240205-WA0002..pdf
+zathura --fork Descargas/DOC-20240205-WA0001..pdf
+zathura Descargas/DOC-20240205-WA0001..pdf
+zathura --fork Descargas/DOC-20240205-WA0001..pdf
+clear
+ls
+cd notes
+clear
+ls
+nvim Smith\ \&\ Smith\ 1995.md
+clear
+zathura --fork ~/Descargas/DOC-20240118-WA0000..pdf
+nvim "Brigham 1988.md"
+cd geode
+celar
+cd ..
+cd psemu
+clear
+ls
+nvim main.c
+cd ..
+clear
+mkdir lks
+cd lks
+nvim lks_print.c
+ls
+pacman -F hexedit
+sudo pacman -S hexedit
+sudo pacman -S hexedit
+clear
+cd ../psemu
+hexedit BIOS.BIN
+clear
+ls
+date
+ls
+rm main main.c
+clear
+ls
+nvim main.c
+man 2 stat
+clear
+ls
+nvim main.c
+nvim build.sh
+chmod +x build.sh
+./build.sh
+ls
+./psemu
+nvim main.c
+lcear
+clear
+ls
+nvim .zprofile
+echo $TTY
+nvim .zprofile
+clear
+nvim .zprofile
+clear
+logout
+echo $TTY
+cat .zprofile
+nvim .zprofile
+clear
+exit
+mv .zprofile ~/.config/zsh
+clear
+exit
+cat .zprofile
+source .zprofile
+clear
+exit
