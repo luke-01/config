@@ -199,6 +199,28 @@ require('lazy').setup({
 			})
 		end
 	},
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.6',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            {
+                'nvim-telescope/telescope-fzf-native.nvim',
+                build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+            }
+        },
+        config = function()
+            local telescope = require('telescope')
+            telescope.setup({})
+            telescope.load_extension('fzf')
+
+            local builtin = require('telescope.builtin')
+            vim.keymap.set('n', '<leader>sf', builtin.find_files)
+            vim.keymap.set('n', '<leader>sg', builtin.live_grep)
+            vim.keymap.set('n', '<leader>sd', builtin.diagnostics)
+            vim.keymap.set('n', '<leader>sr', builtin.lsp_references)
+        end
+    },
 	{
 		'windwp/nvim-autopairs',
 		event = "InsertEnter",

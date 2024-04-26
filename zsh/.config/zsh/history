@@ -1491,3 +1491,122 @@ ls
 exit
 htop
 exit
+sudo pacman -Syu
+cd dev
+ls
+rm -rf lks
+clear
+mkdir geode
+cd geode
+clear
+ls
+mkdir -p include/geode src/{geode,sandbox}
+ll
+ls -T
+clear
+tmux
+clear
+ls
+sudo pacman -S discord
+sudo pacman -S libappindicator-gtk3
+clear
+ls
+ls
+ll
+clear
+ls
+ll
+ll
+nvim include/geode/gd_api.h
+clear
+ls
+nvim CMakeLists.txt
+nvim CMakeLists.txt
+clear
+ls
+nvim include/geode/test.h
+clear
+ls
+cd src/geode
+nvim test.c
+clear
+ls
+nvim CMakeLists.txt
+ll
+nvim CMakeLists.txt
+cd ..
+ls
+cd sandbox
+clear
+ls
+nvim main.c
+nvim CMakeLists.txt
+cd ..
+clear
+nvim CMakeLists.txt
+ls
+mkdir build
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+ll
+rm -rf build
+cd ..
+mkdir build
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+nvim src/sandbox/CMakeLists.txt
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+clear
+cmake --build build
+nvim src/geode/CMakeLists.txt
+cmake --build build
+clear
+ls
+./build/src/sandbox/sandbox
+clear
+ll
+ll
+cd
+clear
+ls
+cd config
+cd nvim
+clear
+ls
+ll
+cd .config/nvim
+clear
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd
+cd confif
+cd config
+clear
+git add --all
+git commit -m "added neat plugins to nvim"
+clear
+git remote add origin git@github.com:luke-01/config.git\
+git branch -M main\
+git push -u origin main
+ll
+cd
+clear
+ls
+cd dev
+cd geode
+clear
+ll
+cd src/geode
+cd ..
+cd ..
+clear
+ll
+nvim .
+ll
+celar
+clear
+clear
+clear
+which prime-run
+nvim /usr/bin/prime-run
