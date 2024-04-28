@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 -- disable netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -60,12 +61,17 @@ end
 
 -- keymaps
 
+-- turn off search highlights
 vim.keymap.set('n', '<leader><leader>', '<cmd>nohl<CR>')
 
+-- navigate diagnostics
 vim.keymap.set('n', '}d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '{d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', '<leader>do', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist)
+
+-- use <Esc> to leave terminal mode
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 -- plugins
 
@@ -302,8 +308,11 @@ require('lazy').setup({
             vim.keymap.set('n', '<leader>t', api.tree.toggle)
         end
     },
+    { 'akinsho/toggleterm.nvim', opts = { open_mapping = '<C-x>', direction = 'float' } },
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	{ 'lewis6991/gitsigns.nvim', opts = {} },
 	{ 'folke/todo-comments.nvim', opts = {} },
     { 'nvim-lualine/lualine.nvim', opts = {} },
+    { 'stevearc/dressing.nvim', opts = {} },
+    { 'stevearc/overseer.nvim', opts = {} },
 })
