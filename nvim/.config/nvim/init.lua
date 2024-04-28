@@ -39,6 +39,7 @@ vim.opt.shiftwidth = tab_size
 vim.opt.signcolumn = 'yes'
 vim.opt.cursorline = true
 vim.opt.colorcolumn = '100'
+vim.opt.laststatus = 3
 
 vim.opt.termguicolors = true
 
@@ -219,6 +220,65 @@ require('lazy').setup({
             vim.keymap.set('n', '<leader>sg', builtin.live_grep)
             vim.keymap.set('n', '<leader>sd', builtin.diagnostics)
             vim.keymap.set('n', '<leader>sr', builtin.lsp_references)
+        end
+    },
+    {
+        'mfussenegger/nvim-dap',
+        dependencies = {
+            { 'theHamsta/nvim-dap-virtual-text', opts = {} },
+            {
+                'rcarriga/nvim-dap-ui',
+                dependencies = { 'nvim-neotest/nvim-nio' },
+                main = 'dapui',
+                opts = {}
+            },
+        },
+        config = function()
+            local dap = require('dap')
+
+            -- dap keymaps
+            vim.keymap.set('n', '<F5>', function() dap.continue() end)
+            vim.keymap.set('n', '<F10>', function() dap.step_over() end)
+            vim.keymap.set('n', '<F11>', function() dap.step_into() end)
+            vim.keymap.set('n', '<F12>', function() dap.step_out() end)
+            vim.keymap.set('n', '<Leader>b', function() dap.toggle_breakpoint() end)
+
+            -- setup dapui to open and close automatically upon starting/ending debugging
+            local dapui = require('dapui')
+            dap.listeners.before.attach.dapui_config = function()
+              dapui.open()
+            end
+            dap.listeners.before.launch.dapui_config = function()
+              dapui.open()
+            end
+            dap.listeners.before.event_terminated.dapui_config = function()
+              dapui.close()
+            end
+            dap.listeners.before.event_exited.dapui_config = function()
+              dapui.close()
+            end
+
+            dap.adapters.lldb = {
+                type = 'executable',
+                command = '/usr/bin/lldb-vscode',
+                name = 'lldb'
+            }
+
+            dap.configurations.c = {
+                {
+                    name = 'Launch',
+                    type = 'lldb',
+                    request = 'launch',
+                    program = function()
+                        return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+                    end,
+                    cwd = '${workspaceFolder}',
+                    stopOnEntry = false,
+                    args = {},
+                    runInTerminal = true
+                }
+            }
+            dap.configurations.cpp = dap.configurations.c
         end
     },
 	{
