@@ -23,7 +23,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 source $ZDOTDIR/git-prompt.sh
 
 setopt PROMPT_SUBST
-PS1='%B%F{red}%m%f %F{green}%1~%f%F{pink}$(__git_ps1 " (%s)")%f%F{cyan} %f%b '
+PS1='%B%F{red}%m%f %F{green}%1~%f%F{magenta}$(__git_ps1 " (%s)")%f%F{cyan} %f%b '
 
 # zoxide (better cd)
 eval "$(zoxide init zsh)"
