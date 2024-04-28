@@ -20,6 +20,8 @@ source /opt/vulkan/1.3.280.1/setup-env.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM="auto"
 source $ZDOTDIR/git-prompt.sh
 
 setopt PROMPT_SUBST
