@@ -46,6 +46,7 @@ vim.opt.termguicolors = true
 
 -- Neovide
 if vim.g.neovide then
+    vim.opt.guifont = 'Fira Code'
     vim.g.neovide_transparency = 0.95
     vim.g.neovide_scale_factor = 1.0
     local change_scale_factor = function(delta)
@@ -303,9 +304,20 @@ require('lazy').setup({
         'nvim-tree/nvim-tree.lua',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function()
-            require('nvim-tree').setup({})
+            require('nvim-tree').setup({
+                sync_root_with_cwd = true,
+            })
             local api = require('nvim-tree.api')
             vim.keymap.set('n', '<leader>t', api.tree.toggle)
+        end
+    },
+    {
+        'stevearc/overseer.nvim',
+        config = function()
+            local overseer = require('overseer')
+            overseer.setup({
+                strategy = 'toggleterm',
+            })
         end
     },
     { 'akinsho/toggleterm.nvim', opts = { open_mapping = '<C-x>', direction = 'float' } },
@@ -314,5 +326,15 @@ require('lazy').setup({
 	{ 'folke/todo-comments.nvim', opts = {} },
     { 'nvim-lualine/lualine.nvim', opts = {} },
     { 'stevearc/dressing.nvim', opts = {} },
-    { 'stevearc/overseer.nvim', opts = {} },
+    {
+        'ahmedkhalf/project.nvim',
+        config = function()
+            require('project_nvim').setup({
+                patterns = { '.git', 'CMakeLists.txt', 'package.json' }
+            })
+            local telescope = require('telescope')
+            telescope.load_extension('projects')
+            vim.keymap.set('n', '<leader>sp', function() telescope.extensions.projects.projects({}) end)
+        end
+    },
 })

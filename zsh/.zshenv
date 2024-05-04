@@ -14,3 +14,7 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+# texlive installer stuff
+export MANPATH="/usr/local/texlive/2024/texmf-dist/doc/man:${MANPATH}"
+export INFOPATH="/usr/local/texlive/2024/texmf-dist/doc/info:${INFOPATH}"
+export PATH="${PATH}:/usr/local/texlive/2024/bin/x86_64-linux"
