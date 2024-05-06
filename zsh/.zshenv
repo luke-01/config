@@ -14,6 +14,9 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+# use vim to view manpages
+export MANPAGER="nvim +Man!"
+
 # texlive installer stuff
 export MANPATH="/usr/local/texlive/2024/texmf-dist/doc/man:${MANPATH}"
 export INFOPATH="/usr/local/texlive/2024/texmf-dist/doc/info:${INFOPATH}"
