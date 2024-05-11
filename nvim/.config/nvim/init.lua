@@ -330,7 +330,7 @@ require('lazy').setup({
         'ahmedkhalf/project.nvim',
         config = function()
             require('project_nvim').setup({
-                patterns = { '.git', 'CMakeLists.txt', 'package.json' }
+                patterns = { '.git', 'build', 'package.json' }
             })
             local telescope = require('telescope')
             telescope.load_extension('projects')
