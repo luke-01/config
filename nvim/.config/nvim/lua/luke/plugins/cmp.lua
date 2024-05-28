@@ -26,6 +26,20 @@ return {
                 ['<C-Space>'] = cmp.mapping.complete(),
                 ['<C-f>'] = cmp.mapping.scroll_docs(4),
                 ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+                ['<C-l>'] = cmp.mapping(function(fallback)
+                    if luasnip.expand_or_jumpable() then
+                        luasnip.expand_or_jump()
+                    else
+                        fallback()
+                    end
+                end),
+                ['<C-h>'] = cmp.mapping(function(fallback)
+                    if luasnip.jumpable(-1) then
+                        luasnip.jump(-1)
+                    else
+                        fallback()
+                    end
+                end),
             }),
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },

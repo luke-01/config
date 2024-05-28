@@ -2,6 +2,16 @@ return {
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()
-        require('onedark').load({ style = 'darker' })
+        local opts = {
+            style = 'darker',
+            transparent = true,
+        }
+        if vim.g.neovide then
+            opts.transparent = false
+        end
+        local onedark = require('onedark')
+        onedark.setup(opts)
+
+        onedark.load()
     end
 }
